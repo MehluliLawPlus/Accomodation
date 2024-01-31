@@ -1,36 +1,21 @@
-# Laravel Hotel
-Laravel Hotel is an open-source web application built with laravel 8.0, enchanced with laravel websockets features to have realtime notification experience.
+# Accomodation system
 
-Its now compatible with laravel 9
-## Examples
-- Reservation
-![alt text](https://github.com/WailanTirajoh/laravel_hotel/blob/main/example-b.png?raw=true)
-
-- Dashboard
-![alt text](https://github.com/WailanTirajoh/laravel_hotel/blob/main/example.png?raw=true)
-- And more ...
+Compatible with laravel 9
 
 ## Instalation 
 
 ### Init DB
-- Create DB Name: hotel_app
-or via terminal
+- Create DB Name: acc_app
+
+### Initial Commands:
 ```
-mysql -u root -p
-```
-enter your db credential
-```
-create database hotel_app;
-exit;
-```
-### Init Commands:
-```
-cp .env.example .env // after that start filling credential at .env
+change name of .env.example file to .env // after that start filling credential at .env
 
 composer install
 npm install 
 npm run dev
 php artisan migrate:fresh --seed
+//Ensure you do the following three commands in two seperate terminals
 php artisan serv                => Terminal 1
 php artisan websockets:serv     => Terminal 2   //run the websocket server for realtime notification
 ```
@@ -40,15 +25,9 @@ php artisan websockets:serv     => Terminal 2   //run the websocket server for r
 npm run dev
 ```
 
-### Production Build
-```
-// run this on your terminal to generate production build
-npm run build
-```
-
 ### Login:
-- Email: wailantirajoh@gmail.com
-- Password: wailan
+- Email: poly@gmail.com
+- Password: password
 
 ## TODO:
 - Customer's Room:
@@ -162,11 +141,6 @@ npm run build
 
 
 
-
-
-## ERD
-![alt text](https://github.com/WailanTirajoh/laravel_hotel/blob/main/erd.PNG?raw=true)
-
 ## Reservation Plot
 
 - Customer Register to Admin
@@ -183,7 +157,3 @@ npm run build
 - Stay
 - Finish (Check Out) and pay the insufficient payment
 
-
-## Laravel License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
